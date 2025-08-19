@@ -4,7 +4,7 @@ import logo from "../assets/book.png"
 function Foot1() {
   return (
     <div>
-        <div className="flex gap-2.5 justify-center items-center ">
+        <div className="flex gap-2.5 justify-start items-center ">
                 <div className="">
                   <img
                     src={logo}

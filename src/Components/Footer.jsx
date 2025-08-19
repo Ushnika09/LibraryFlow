@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="bg-[#212529] w-full bottom-0  flex flex-col text-[#D1D5DB] shadow-2xl">
+    <div className="bg-[#212529] w-full bottom-0  flex flex-col text-[#D1D5DB] shadow-2xl items-start md:items-center justify-center py-5">
       <div className="  px-[2rem] py-[1rem] md:flex-row flex flex-col   justify-end md:justify-between md:items-center md:gap-[6.5rem]">
         <Foot1 />
 
-        <div className="md:p-[0.5rem] p-[0.3rem]">
+        <div className="md:p-[0.5rem] p-[0.3rem] flex flex-col">
           <h1 className="text-white text-[1.1rem] md:text-2xl font-semibold py-[1rem]">
             Quick Links
           </h1>

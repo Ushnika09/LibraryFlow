@@ -42,32 +42,32 @@ function Header() {
         </div>
       </Link>
 
-      <div className="flex md:gap-[3rem] gap-[2rem] justify-center items-center">
-        <Link to={"/"} className={`flex gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] px-[1rem]  rounded-lg ${location.pathname=="/"?"bg-[#F97415]":"bg-white"}`}>
+      <div className="flex md:gap-[3rem] gap-[0.2rem] justify-center items-center">
+        <Link to={"/"} className={`flex md:gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] md:px-[1rem] px-[0.7rem] gap-1  rounded-lg ${location.pathname=="/"?"bg-[#F97415]":"bg-white"}`}>
           <img
             src={home}
             alt=""
-            className="h-[1.5rem]    "
+            className="md:h-[1.5rem] h-[1rem]   "
           />
-          <h1>Home</h1>
+          <h1 className="md:text-[1.2rem] text-[0.7rem]">Home</h1>
         </Link>
 
-        <Link to={"browse"} className={`flex gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] px-[1rem]  rounded-lg ${location.pathname=="/browse"?"bg-[#F97415]":"bg-white"}`}>
+        <Link to={"browse"} className={`flex md:gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] md:px-[1rem] px-[0.7rem] gap-1  rounded-lg ${location.pathname=="/browse"?"bg-[#F97415]":"bg-white"}`}>
           <img
             src={search}
             alt=""
-            className="h-[1.5rem]   "
+            className="md:h-[1.5rem] h-[1rem]"
           />
-          <h1>Browse Books</h1>
+          <h1 className="md:text-[1.2rem] text-[0.7rem]">Browse Books</h1>
         </Link>
 
-        <Link to={"add"} className={`flex gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] px-[1rem]  rounded-lg ${location.pathname=="/add"?"bg-[#F97415]":"bg-white"}`}>
+        <Link to={"add"} className={`flex md:gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] md:px-[1rem] px-[0.7rem] gap-1 rounded-lg ${location.pathname=="/add"?"bg-[#F97415]":"bg-white"}`}>
           <img
             src={add}
             alt=""
-            className="h-[1rem] "
+            className="md:h-[1rem] h-[0.7rem] "
           />
-          <h1>Add Book</h1>
+          <h1 className="md:text-[1.2rem] text-[0.7rem]">Add Book</h1>
         </Link>
       </div>
     </div>
