@@ -13,7 +13,7 @@ function Category({ books, category}) {
       {category.map((cat,i) => {
         const count = books.filter((book) => book.genre === cat).length;
         return (
-          <Link to={`/${cat}`} className="flex flex-col md:flex-1/3 flex-1/2  lg:flex-1/4 py-[1rem]  justify-center items-center border rounded-lg  border-none shadow-xl hover:scale-105 duration-300 px-[2rem]  bg-white/90">
+          <Link to={`/browse/${cat}`} className="flex flex-col md:flex-1/3 flex-1/2  lg:flex-1/4 py-[1rem]  justify-center items-center border rounded-lg  border-none shadow-xl hover:scale-105 duration-300 px-[2rem]  bg-white/90">
             <span className="p-[1rem] bg-[#F97415]/75 rounded-full mt-[1rem] shrink-0">
                 <img src={book} alt="" className="h-[2rem] "/>
             </span>

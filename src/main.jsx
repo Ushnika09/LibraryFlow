@@ -19,7 +19,7 @@ const appRoutes = createBrowserRouter([
         element: <Add />,
       },
       {
-        path: "browse",
+        path: "browse/all",
         element: <Browse />,
       },
       {
@@ -27,11 +27,11 @@ const appRoutes = createBrowserRouter([
         element: <Main/>
       },
       {
-        path: "/:genre",
-        element: <Genrebooks/>
+        path: "/browse/:genre",
+        element: <Browse/>
       },
       {
-        path: "/genre/:book",
+        path: "/books/:book",
         element: <Bookdetails/>
       },
     ],

@@ -35,11 +35,11 @@ function Bookdetails() {
         {/* Book Info */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
           {/* Title + Rating */}
-          <div className="flex flex-col md:flex-row md:items-center gap-3">
-            <h1 className="text-3xl font-bold text-gray-900">
+          <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-7 justify-center">
+            <h1 className="text-4xl font-bold text-gray-900">
               {bookdetail.title}
             </h1>
-            <span className="flex items-center gap-1.5 bg-gray-900/90 text-white text-sm font-medium px-3 py-1 rounded-full shadow">
+            <span className="flex items-center gap-1.5 justify-center bg-[#F97415] text-white  font-bold  py-1.5 rounded-full shadow mx-auto w-[5rem]">
               <img src={star} className="h-4" alt="star" /> {bookdetail.rating}
             </span>
           </div>

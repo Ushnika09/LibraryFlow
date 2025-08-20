@@ -52,7 +52,7 @@ function Header() {
           <h1 className="md:text-[1.2rem] text-[0.7rem]">Home</h1>
         </Link>
 
-        <Link to={"browse"} className={`flex md:gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] md:px-[1rem] px-[0.7rem] gap-1  rounded-lg ${location.pathname=="/browse"?"bg-[#F97415]":"bg-white"}`}>
+        <Link to={"browse/all"} className={`flex md:gap-2 items-center justify-center hover:cursor cursor-pointer hover:bg-[#F97415]  py-[0.5rem] md:px-[1rem] px-[0.7rem] gap-1  rounded-lg ${location.pathname.startsWith("/browse")?"bg-[#F97415]":"bg-white"}`}>
           <img
             src={search}
             alt=""

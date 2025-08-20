@@ -11,11 +11,10 @@ import books from './Components/Books'
 function App() {
   return (
     <BookContext.Provider value={books}>
-    <div>
+    
       <Header/>
       <Outlet/>
       <Footer/>
-    </div>
     </BookContext.Provider>
   )
 }

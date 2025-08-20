@@ -63,7 +63,7 @@ const books = [
     description: "A sweeping history of human evolution and civilization.",
     detailedDescription: "Harari explores the history of humankind from the emergence of Homo sapiens in Africa to the present. The book examines how language, agriculture, empires, religion, and capitalism shaped human societies. It challenges readers to consider how shared myths and cooperation define humanity.",
     rating: 4.7,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Non-Fiction",
     coverImg: "https://covers.openlibrary.org/b/isbn/0062316095-L.jpg"
@@ -98,7 +98,7 @@ const books = [
     description: "A grand saga of the fall and rise of civilizations across galaxies.",
     detailedDescription: "Mathematician Hari Seldon develops psychohistory, a science predicting the fall of the Galactic Empire. To preserve knowledge and shorten the dark ages to come, he establishes the Foundation. The series follows the struggle to safeguard civilization against chaos and tyranny.",
     rating: 4.5,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Sci-Fi",
     coverImg: "https://covers.openlibrary.org/b/isbn/0553293354-L.jpg"
@@ -111,7 +111,7 @@ const books = [
     description: "Bilbo's whimsical journey through Middle-earth.",
     detailedDescription: "Bilbo Baggins, a reluctant hobbit, is swept into an adventure with Gandalf the wizard and a band of dwarves seeking to reclaim their homeland from the dragon Smaug. Along the way, Bilbo discovers courage, cunning, and a mysterious ring that changes everything.",
     rating: 4.7,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Fantasy",
     coverImg: "https://covers.openlibrary.org/b/isbn/0618968636-L.jpg"
@@ -146,7 +146,7 @@ const books = [
     description: "A modern thriller full of twists about marriage and lies.",
     detailedDescription: "Nick and Amy Dunne’s marriage seems picture-perfect—until Amy goes missing on their fifth wedding anniversary. As media scrutiny intensifies, suspicions fall on Nick. Flynn’s novel twists and turns through unreliable narrators and shocking revelations about manipulation and deceit.",
     rating: 4.4,
-    isPopular: true,
+    isPopular: false,
     isFeatured: false,
     genre: "Thriller",
     coverImg: "https://covers.openlibrary.org/b/isbn/0307588378-L.jpg"
@@ -157,7 +157,7 @@ const books = [
     description: "Murder mystery entwined with financial corruption and family secrets.",
     detailedDescription: "Journalist Mikael Blomkvist and hacker Lisbeth Salander team up to investigate the decades-old disappearance of a wealthy heiress. What they uncover is a web of family secrets, corruption, and violence. Lisbeth’s unforgettable character brings grit and brilliance to this dark thriller.",
     rating: 4.5,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Thriller",
     coverImg: "https://covers.openlibrary.org/b/isbn/0307949486-L.jpg"
@@ -168,7 +168,7 @@ const books = [
     description: "A gripping symbologist thriller involving secret societies.",
     detailedDescription: "Professor Robert Langdon is thrust into a deadly puzzle after a murder in the Louvre. Teaming with cryptologist Sophie Neveu, he uncovers hidden messages in Da Vinci’s works, leading to a secret guarded for centuries by secret societies and the Church.",
     rating: 4.3,
-    isPopular: true,
+    isPopular: false,
     isFeatured: false,
     genre: "Thriller",
     coverImg: "https://covers.openlibrary.org/b/isbn/0307474275-L.jpg"
@@ -181,7 +181,7 @@ const books = [
     description: "A dystopian warning about surveillance and totalitarianism.",
     detailedDescription: "In a grim totalitarian future, Winston Smith works at the Ministry of Truth, rewriting history to suit the Party. Constantly watched by Big Brother, Winston secretly rebels, seeking love and freedom. Orwell’s chilling vision warns of the dangers of authoritarian control and lost individuality.",
     rating: 4.7,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Classics",
     coverImg: "https://covers.openlibrary.org/b/isbn/0451524934-L.jpg"
@@ -216,7 +216,7 @@ const books = [
     description: "A proven framework for building good habits and breaking bad ones.",
     detailedDescription: "James Clear outlines how small, consistent changes lead to remarkable results. With practical strategies like habit stacking, environment design, and the 1% rule, this book shows how to reprogram behavior for long-term success in health, work, and life.",
     rating: 4.9,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Self-Help",
     coverImg: "https://covers.openlibrary.org/b/isbn/0735211299-L.jpg"
@@ -227,7 +227,7 @@ const books = [
     description: "A spiritual guide to living fully in the present moment.",
     detailedDescription: "Tolle encourages readers to break free from the constant chatter of the mind and embrace the present moment as the key to peace and fulfillment. Blending philosophy and spirituality, it teaches how to overcome anxiety and live with awareness.",
     rating: 4.6,
-    isPopular: true,
+    isPopular: false,
     isFeatured: false,
     genre: "Self-Help",
     coverImg: "https://covers.openlibrary.org/b/isbn/1577314808-L.jpg"
@@ -284,7 +284,7 @@ const books = [
     description: "A stranded astronaut's struggle to survive on Mars.",
     detailedDescription: "After a dust storm leaves astronaut Mark Watney stranded on Mars, he must use ingenuity, science, and humor to survive. From growing food to engineering life-saving solutions, Watney’s fight for survival captures resilience, hope, and human determination.",
     rating: 4.8,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Sci-Fi",
     coverImg: "https://covers.openlibrary.org/b/isbn/0804139024-L.jpg"
@@ -295,7 +295,7 @@ const books = [
     description: "A chilling tale of isolation and supernatural horror.",
     detailedDescription: "Jack Torrance, an aspiring writer, becomes caretaker of the remote Overlook Hotel with his wife and son. As winter closes in, malevolent forces in the hotel prey on Jack’s weaknesses, pushing him toward violence. King’s classic explores madness, isolation, and the supernatural.",
     rating: 4.7,
-    isPopular: true,
+    isPopular: false,
     isFeatured: true,
     genre: "Horror",
     coverImg: "https://covers.openlibrary.org/b/isbn/0307743659-L.jpg"
@@ -306,7 +306,7 @@ const books = [
     description: "A haunting story of a father and son's survival in a post-apocalyptic world.",
     detailedDescription: "A father and his young son journey through a desolate, ash-covered landscape after an unspecified catastrophe. Facing starvation, violence, and despair, they cling to love and the hope of survival. McCarthy’s prose is stark yet deeply moving.",
     rating: 4.5,
-    isPopular: true,
+    isPopular: false,
     isFeatured: false,
     genre: "Fiction",
     coverImg: "https://covers.openlibrary.org/b/isbn/0307387895-L.jpg"

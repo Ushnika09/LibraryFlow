@@ -10,7 +10,7 @@ function Hero() {
         <h1 className='lg:text-6xl md:text-5xl text-4xl font-bold py-3.5 shrink-0 flex-nowrap flex'>Welcome to  <span className='bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent pl-3'> LibraryFlow</span></h1>
         <h1 className='lg:text-xl md:text-[1.1rem] text-[0.8rem] p-2.5 font-semibold text-gray-700/60 flex-wrap flex text-center'>Discover, explore, and manage your digital library. Join our community of book lovers and dive into endless stories waiting to be discovered.</h1>
         <div className='flex justify-center items-center gap-8 py-3.5'>
-            <Link to={"browse"} className={`flex gap-2 items-center justify-center hover:cursor cursor-pointer bg-[#F97415] shadow  py-[0.5rem] px-[1rem] border rounded-lg `}>
+            <Link to={"browse/all"} className={`flex gap-2 items-center justify-center hover:cursor cursor-pointer bg-[#F97415] shadow  py-[0.5rem] px-[1rem] border rounded-lg `}>
           <img
             src={search}
             alt=""

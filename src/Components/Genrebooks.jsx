@@ -1,14 +1,9 @@
 import React, { useContext } from "react";
-import BookContext from "./BookContext";
 import { Link, useParams } from "react-router-dom";
 import star from "../assets/star.png";
 import arrow from "../assets/arrow.png";
 
-function Genrebooks() {
-  const books = useContext(BookContext);
-  const { genre } = useParams();
-
-  const genreBooks = books.filter((book) => book.genre === genre);
+function Genrebooks({filtered,filter}) {
 
   return (
     <div className="p-6 mx-[4rem] mb-[2rem] mt-[1.5rem] flex flex-col items-center">
@@ -22,24 +17,20 @@ function Genrebooks() {
       </Link>
     
       <h1 className="text-3xl font-bold mb-9 text-gray-900 ">
-        Books in <span className="text-gray-600">{genre}</span>
+        Books in <span className="text-[#F97415]/75">{filter}</span>
       </h1>
 
-      <div className="flex flex-wrap gap-6 justify-center items-center">
-        {genreBooks.map((book, i) => (
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-[1rem] items-center">
+        {filtered.map((book, i) => (
           <div
             key={i}
-            className="w-[15rem] bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group"
+            className=" bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group"
           >
-            
+
             <div className="relative">
-              <img
-                src={book.coverImg}
-                alt={book.title}
-                className="w-full h-60 object-cover"
-              />
+              
               {/* Rating Badge */}
-              <span className="flex items-center gap-1.5 absolute top-3 right-3 bg-gray-900/90 text-white text-sm font-medium px-2 py-1 rounded-lg shadow">
+              <span className="flex items-center gap-1.5 absolute top-3 right-3 bg-[#F97415] text-white text-sm font-bold px-2 py-1 rounded-lg shadow">
                 <img src={star} className="h-3" alt="star" /> {book.rating}
               </span>
             </div>
@@ -60,8 +51,8 @@ function Genrebooks() {
 
               {/* View Details Link */}
               <Link
-                to={`/genre/${book.title}`}
-                className="mt-3 inline-block text-sm font-medium text-blue-600 hover:text-blue-800"
+                to={`/books/${book.title}`}
+                className="mt-3 inline-block text-sm font-medium hover:text-[#F97415] text-blue-800"
               >
                 View Details →
               </Link>
