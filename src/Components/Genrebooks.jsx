@@ -6,7 +6,7 @@ import arrow from "../assets/arrow.png";
 function Genrebooks({filtered,filter}) {
 
   return (
-    <div className="p-6 mx-[4rem] mb-[2rem] mt-[1.5rem] flex flex-col items-center">
+    <div className="p-6  mb-[2rem] mt-[1.5rem] flex flex-col items-center mx-auto">
 
       <Link
         to="/"
@@ -24,7 +24,7 @@ function Genrebooks({filtered,filter}) {
         {filtered.map((book, i) => (
           <div
             key={i}
-            className=" bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group"
+            className=" bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group w-[15rem]"
           >
 
             <div className="relative">

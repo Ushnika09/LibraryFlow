@@ -5,7 +5,7 @@ import arrow from "../assets/arrow.png";
 import star from "../assets/star.png";
 
 function Bookdetails() {
-  const books = useContext(BookContext);
+  const {books} = useContext(BookContext);
   const { book } = useParams();
 
  

@@ -5,7 +5,7 @@ import Genrebooks from "./Genrebooks";
 import { useParams } from "react-router-dom";
 
 function Browse() {
-  const books = useContext(BookContext);
+  const {books} = useContext(BookContext);
   // console.log(books);
   const category = [...new Set(books.map((book) => book.genre))];
 

@@ -8,11 +8,13 @@ import Add from "./Components/Add.jsx";
 import Main from "./Components/Main.jsx";
 import Genrebooks from "./Components/Genrebooks.jsx";
 import Bookdetails from "./Components/Bookdetails.jsx";
+import Error from "./Components/Error.jsx";
 
 const appRoutes = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement:<Error/>,
     children: [
       {
         path: "add",
