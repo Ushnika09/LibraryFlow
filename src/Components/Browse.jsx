@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
-import BookContext from "./BookContext";
+
 import { ChevronDown } from "lucide-react";
 import Genrebooks from "./Genrebooks";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Browse() {
-  const {books} = useContext(BookContext);
+  const books = useSelector((state) => state.books);
+
   // console.log(books);
   const category = [...new Set(books.map((book) => book.genre))];
 

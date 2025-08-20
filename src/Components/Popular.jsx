@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import star from "../assets/star.png";
 import arrow from "../assets/arrow.png";
 
-function Popular({books, popular}) {
+function Popular({ popular}) {
     
   return (
     <div className="flex flex-col px-[3rem] bg-gradient-to-b from-purple-50 to-purple-100 py-[2rem] justify-between items-center">

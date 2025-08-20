@@ -4,29 +4,23 @@ import Hero from './Hero'
 import Dashboard from './Dashboard';
 import Category from './Category';
 import Popular from './Popular';
-import React, { useContext } from 'react';
-import BookContext from './BookContext';
+import { useSelector } from "react-redux";
+
 
 
 function Main() {
-  const {books, setBooks}=useContext(BookContext)
+  const books = useSelector((state) => state.books);
 
-  console.log(books);
   const category=[...new Set(books.map((book)=>book.genre))]
   const featured=books.filter((book)=>book.isFeatured== true)
   const popular=books.filter((book)=>book.isPopular== true)
-
-  
-
-
-
 
   return (
     <div className='min-h-screen bg-neutral-100'>
       <Hero/>
       <Dashboard books={books} category={category} featured={featured}/>
       <Category books={books} category={category} featured={featured} />
-      <Popular books={books}  popular={popular}/>
+      <Popular   popular={popular}/>
     </div>
   )
 }

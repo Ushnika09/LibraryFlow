@@ -1,12 +1,37 @@
-# React + Vite
+# 📚 LibraryFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **LibraryFlow** – your ultimate digital library companion! Dive in, browse books, add your favorites, and explore a curated collection of popular and featured reads. All built with **React**, **Redux Toolkit**, **React Router**, and **Tailwind CSS** for a smooth, modern experience.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- **Browse Books**: Search by title or author, filter by category, popularity, or featured books.  
+- **Add New Books**: Easily add books with detailed info, ratings, and genre.  
+- **Featured & Popular**: Highlight the best books in your collection.  
+- **Dynamic Categories**: Automatically generates categories based on your book list.  
+- **Responsive Design**: Works beautifully on mobile, tablet, and desktop.  
+- **State Management with Redux Toolkit**: Seamlessly handles book data globally.  
+- **Routing with React Router**: Smooth navigation with nested layouts and dynamic routes.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run **LibraryFlow** locally:
+
+### 1️⃣ Clone the repo
+git clone https://github.com/Ushnika09/LibraryFlow.git
+
+cd LibraryFlow
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start the development server
+npm start
+
+Open your browser at http://localhost:5173 (or the port shown in your terminal) to see LibraryFlow in action.
+
+4️⃣ Build for production
+npm run build

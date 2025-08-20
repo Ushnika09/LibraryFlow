@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import BookContext from "./BookContext";
+import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router-dom';
 import arrow from "../assets/arrow.png";
 import star from "../assets/star.png";
 
 function Bookdetails() {
-  const {books} = useContext(BookContext);
+    const books = useSelector((state) => state.books);
+
   const { book } = useParams();
 
  
@@ -32,9 +32,9 @@ function Bookdetails() {
           className="w-[18rem] h-[28rem] rounded-lg object-cover shadow-md"
         />
 
-        {/* Book Info */}
+        
         <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
-          {/* Title + Rating */}
+          
           <div className="flex flex-col md:flex-row md:items-center gap-3 md:gap-7 justify-center">
             <h1 className="text-4xl font-bold text-gray-900">
               {bookdetail.title}
@@ -44,15 +44,15 @@ function Bookdetails() {
             </span>
           </div>
 
-          {/* Author */}
+          
           <p className="text-lg text-gray-600 mt-2">by {bookdetail.author}</p>
 
-          {/* Short Description */}
+          
           <p className="mt-4 text-gray-700 leading-relaxed">
             {bookdetail.detailedDescription}
           </p>
 
-          {/* Extra Info */}
+          
           <div className="mt-6 flex gap-6 text-sm text-gray-600">
             <p>
               <span className="font-semibold">Genre:</span> {bookdetail.genre}
